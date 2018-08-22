@@ -1,5 +1,8 @@
 var ProductionString = 'prod';
 var DevelopmentString = 'dev';
+var nu = {
+    env: 'dev'
+}
 
 function getEnvironment() {
   return nu.env;
