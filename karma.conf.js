@@ -6,7 +6,7 @@ module.exports = function (config) {
             'test/**/*.js'
         ],
         reporters: ['mocha'],
-        port: 9876,  // karma web server port
+        port: 9876,
         colors: true,
         logLevel: config.LOG_INFO,
         browsers: ['ChromeHeadless'],
