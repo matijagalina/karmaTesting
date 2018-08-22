@@ -24,6 +24,10 @@ describe ('Environment', function() {
 
     describe('output', function() {
 
+        it('getEnvironment should output string', function() {
+            expect(getEnvironment()).to.be.a('string');
+        })
+
         it('isDebug should return true when nu.env is "dev"', function() {
             assert.equal(true, isDebug());
         });
