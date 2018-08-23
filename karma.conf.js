@@ -5,7 +5,12 @@ module.exports = function (config) {
             'src/**/*.js',
             'test/**/*.js'
         ],
-        reporters: ['mocha'],
+        reporters: ['mocha', 'coverage'],
+        coverageReporter: {
+            type: 'text-summary',
+            dir: 'coverage/',
+            includeAllSources: true
+        },
         port: 9876,
         colors: true,
         logLevel: config.LOG_INFO,
