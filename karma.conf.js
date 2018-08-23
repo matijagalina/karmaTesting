@@ -5,6 +5,9 @@ module.exports = function (config) {
             'src/**/*.js',
             'test/**/*.js'
         ],
+        preprocessors: {
+            'src/**/*.js': ['coverage']
+        },
         reporters: ['mocha', 'coverage'],
         coverageReporter: {
             type: 'text-summary',
